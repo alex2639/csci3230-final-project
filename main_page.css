@@ -1,6 +1,6 @@
 /*Formatting and positioning the logo*/
 #header img {
-    width: 750px;
+    width: 1100px;
     height: 90px;
     float: left;
     top: 7px;
@@ -24,7 +24,7 @@
     float: right;
     position: inherit;
     display: block;
-    background-color: #be1515;
+/*    background-color: #be1515;*/
 }
 
 /*Formatting the Log In button*/
