@@ -11,7 +11,7 @@ var mongoose=require('mongoose')
 // body parser (parses URL-encoded body content)
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static('styles'));
+app.use(express.static('public'));
 
 app.set('port', process.env.PORT || 3000)
 
@@ -44,8 +44,6 @@ app.get('/',function(request, response){
   response.render('login',{title: 'Log in'});//this will open the login.pug
 });
 
-//var usernames=[];
-
 app.post('/processLogin', function(request, response) {
   console.log('form submitted: ' + request.body);
   var username = request.body.username;
@@ -57,9 +55,6 @@ app.post('/processLogin', function(request, response) {
       request.session.username = username;
 
       // redirect to main page
-      //response.redirect('main_page.html');
-      console.log(request.url);
-      
       response.writeHead(301,{Location: 'main_page.html'});
       response.end();
 
@@ -101,10 +96,7 @@ app.post('/processRegistration', function(request, response) {
         }else{
           request.session.username =username;
           request.session.save();
-          //response.render('main_page.html', {username: username});
-          //window.location.href="main_page.html";
-          console.log(request.url);
-          //response.redirect('main_page.html');
+
           response.writeHead(301,{Location: 'main_page.html'});
           response.end();
         }
