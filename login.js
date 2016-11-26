@@ -28,6 +28,18 @@ app.use(session({
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
+mongoose.connect('localhost:27017/');
+
+var Schema = mongoose.Schema;
+
+var userSchema = new Schema({
+	firstName: String,
+	lastName: String,
+  username: String,
+  hashedPassword: String
+}, {collection: 'User'});
+var User = mongoose.model('User', userSchema);
+
 app.get('/',function(request, response){
   response.render('login',{title: 'Log in'});//this will open the login.pug
 });
@@ -46,7 +58,11 @@ app.post('/processLogin', function(request, response) {
 
       // redirect to main page
       //response.redirect('main_page.html');
-      window.location.href="main_page.html";
+      console.log(request.url);
+      
+      response.writeHead(301,{Location: 'main_page.html'});
+      response.end();
+
     }else{
       // show the login page again, with an error msg
       response.render('login', {errorMessage: 'Login Incorrect'});
@@ -62,42 +78,40 @@ app.post('/processRegistration', function(request, response) {
   console.log('register form submitted: ' + request.body);
 
   var username = request.body.username;
+  var firstname=request.body.firstname;
+  var lastname=request.body.lastname;
   var password = request.body.password;
 
   var hashedPwd = bcrypt.hashSync(password);
 
-  //var newUser=new User({username: username,
-  //                      hashedPassword: hashedPwd});
+  var newUser={username: username,
+                        firstname: firstname,
+                        lastname: lastname,
+                        hashedPassword: hashedPwd};
 
-  newUser.save(function(error){
-    if (error){
-      console.log('registration error: '+error);
-      response.render('register', {errorMessage: 'Unable to register.'})
+  User.find({username: username}).then(function(results){
+    if (results.length>0) {
+      response.render('register',{errorMessage:'Username taken'});
     }else{
-      request.session.username =username;
-      request.session.save();
-      //response.render('main_page.html', {username: username});
-      window.location.href="main_page.html";
+      var user=new User(newUser);
+      user.save(function(error){
+        if (error){
+          console.log('registration error: '+error);
+          response.render('register', {errorMessage: 'Unable to register.'})
+        }else{
+          request.session.username =username;
+          request.session.save();
+          //response.render('main_page.html', {username: username});
+          //window.location.href="main_page.html";
+          console.log(request.url);
+          //response.redirect('main_page.html');
+          response.writeHead(301,{Location: 'main_page.html'});
+          response.end();
+        }
+      });
+
     }
   });
-
-  function userExists(username){
-    
-  }
-
-  if (userExists(username)) {
-    // show the register page again, with an error msg
-    response.render('register', {errorMessage: 'Username already taken'});
-  } else {
-    // remember the username
-    usernames.push(username);
-
-    // store the username in the session
-    request.session.username = username;
-
-    // redirect to the index
-    response.redirect('/');
-  }
 });
 
 // setup the HTTP listener
