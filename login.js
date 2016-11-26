@@ -33,8 +33,8 @@ mongoose.connect('localhost:27017/');
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-	firstName: String,
-	lastName: String,
+	firstname: String,
+	lastname: String,
   username: String,
   hashedPassword: String
 }, {collection: 'User'});
@@ -73,8 +73,8 @@ app.post('/processRegistration', function(request, response) {
   console.log('register form submitted: ' + request.body);
 
   var username = request.body.username;
-  var firstname=request.body.firstname;
-  var lastname=request.body.lastname;
+  var firstname=request.body.firstName;
+  var lastname=request.body.lastName;
   var password = request.body.password;
 
   var hashedPwd = bcrypt.hashSync(password);
