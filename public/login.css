@@ -6,3 +6,11 @@ div.container {
 	margin-bottom: 50px;
 }
 */
+
+body{
+  max-width: 800px;
+}
+
+input{
+  max-width: 400px;
+}
