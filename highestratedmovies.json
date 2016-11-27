@@ -1,6 +1,5 @@
-[
-  {
-    "id": 1,
+{
+    "1": {
     "name": "Fight Club",
     "rating": 9.3,
     "details": {
@@ -15,8 +14,7 @@
       "large": "/fight_club/scene.jpg"
     }
   },
-  {
-    "id": 2,
+    "2": {
     "name": "Batman v Superman: Dawn of Justice",
     "rating": 8.1,
     "details": {
@@ -31,8 +29,7 @@
       "large": "/batmanvsuperman/scene.jpg"
     }
   },
-  {
-    "id": 3,
+    "3": {
     "name": "A Beautiful Mind",
     "rating": 8.9,
     "details": {
@@ -47,8 +44,7 @@
       "large": "/beautifulmind/scene.jpg"
     }
   },
-  {
-    "id": 4,
+    "4": {
     "name": "Captain America: The Winter Soldier",
     "rating": 9.4,
     "details": {
@@ -63,8 +59,7 @@
       "large": "/captainamerica/scene.jpg"
     }
   },
-  {
-    "id": 5,
+    "5": {
     "name": "The Tale of Despereaux",
     "rating": 8.1,
     "details": {
@@ -79,8 +74,7 @@
       "large": "/thetale/scene.jpg"
     }
   },
-  {
-    "id": 6,
+    "6": {
     "name": "Interstellar",
     "rating": 9.8,
     "details": {
@@ -95,8 +89,7 @@
       "large": "/interstellar/scene.jpg"
     }
   },
-  {
-    "id": 7,
+    "i7": {
     "name": "The Martian",
     "rating": 9.1,
     "details": {
@@ -111,8 +104,7 @@
       "large": "/themartian/scene.png"
     }
   },
-  {
-    "id": 8,
+    "8": {
     "name": "Guardians of the Galaxy",
     "rating": 9.3,
     "details": {
@@ -127,10 +119,9 @@
       "large": "/guardians/scene.jpeg"
     }
   },
-  {
-    "id": 9,
+    "9": {
     "name": "How to Train Your Dragon",
-    "rating": 8.9/10,
+    "rating": 8.9,
     "details": {
       "production": "DreamWorks Animation",
       "duration": 98,
@@ -143,4 +134,4 @@
       "large": "/howtotrain/scene.jpg"
     }
   },
-]
+}
