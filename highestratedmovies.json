@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Fight Club",
-    "rating": 9.3/10,
+    "rating": 9.3,
     "details": {
       "production": "Fox 2000 Pictures",
       "duration": 139,
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Batman v Superman: Dawn of Justice",
-    "rating": 8.1/10,
+    "rating": 8.1,
     "details": {
       "production": "Warner Bros.",
       "duration": 151,
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "name": "A Beautiful Mind",
-    "rating": 8.9/10,
+    "rating": 8.9,
     "details": {
       "production": "Universal Pictures",
       "duration": 135,
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "name": "Captain America: The Winter Soldier",
-    "rating": 9.4/10,
+    "rating": 9.4,
     "details": {
       "production": "Marvel Entertainment",
       "duration": 136,
@@ -66,7 +66,7 @@
   {
     "id": 5,
     "name": "The Tale of Despereaux",
-    "rating": 8.1/10,
+    "rating": 8.1,
     "details": {
       "production": "Universal Pictures",
       "duration": 93,
@@ -82,7 +82,7 @@
   {
     "id": 6,
     "name": "Interstellar",
-    "rating": 9.8/10,
+    "rating": 9.8,
     "details": {
       "production": "Paramount Pictures",
       "duration": 169,
@@ -98,7 +98,7 @@
   {
     "id": 7,
     "name": "The Martian",
-    "rating": 9.1/10,
+    "rating": 9.1,
     "details": {
       "production": "Twentieth Century Fox Film Corporation",
       "duration": 144,
@@ -114,7 +114,7 @@
   {
     "id": 8,
     "name": "Guardians of the Galaxy",
-    "rating": 9.3/10,
+    "rating": 9.3,
     "details": {
       "production": "Marvel Studios",
       "duration": 121,
