@@ -40,6 +40,7 @@ var userSchema = new Schema({
 }, {collection: 'User'});
 var User = mongoose.model('User', userSchema);
 
+//when the webpage is first opened, this page will show up by default
 app.get('/',function(request, response){
   response.render('login',{title: 'Log in'});//this will open the login.pug
 });
@@ -59,15 +60,17 @@ app.post('/processLogin', function(request, response) {
       response.end();
 
     }else{
-      // show the login page again, with an error msg
+      // show the login page again, with an error message
       response.render('login', {errorMessage: 'Login Incorrect'});
     }
   });
 });
 
+//go to register page if user clicks register
 app.post('/openRegister', function(request, response){
   response.render('register',{title: 'Register'});
 });
+
 
 app.post('/processRegistration', function(request, response) {
   console.log('register form submitted: ' + request.body);
@@ -79,13 +82,14 @@ app.post('/processRegistration', function(request, response) {
 
   var hashedPwd = bcrypt.hashSync(password);
 
+//for user data
   var newUser={username: username,
                         firstname: firstname,
                         lastname: lastname,
                         hashedPassword: hashedPwd};
 
   User.find({username: username}).then(function(results){
-    if (results.length>0) {
+    if (results.length>0) {//if username already exists in database
       response.render('register',{errorMessage:'Username taken'});
     }else{
       var user=new User(newUser);
