@@ -1,5 +1,5 @@
 {
-    "1": {
+    "one": {
     "name": "Fight Club",
     "rating": 9.3,
     "details": {
@@ -14,7 +14,7 @@
       "large": "/fight_club/scene.jpg"
     }
   },
-    "2": {
+    "two": {
     "name": "Batman v Superman: Dawn of Justice",
     "rating": 8.1,
     "details": {
@@ -29,7 +29,7 @@
       "large": "/batmanvsuperman/scene.jpg"
     }
   },
-    "3": {
+    "three": {
     "name": "A Beautiful Mind",
     "rating": 8.9,
     "details": {
@@ -44,7 +44,7 @@
       "large": "/beautifulmind/scene.jpg"
     }
   },
-    "4": {
+    "four": {
     "name": "Captain America: The Winter Soldier",
     "rating": 9.4,
     "details": {
@@ -59,7 +59,7 @@
       "large": "/captainamerica/scene.jpg"
     }
   },
-    "5": {
+    "five": {
     "name": "The Tale of Despereaux",
     "rating": 8.1,
     "details": {
@@ -74,7 +74,7 @@
       "large": "/thetale/scene.jpg"
     }
   },
-    "6": {
+    "six": {
     "name": "Interstellar",
     "rating": 9.8,
     "details": {
@@ -89,7 +89,7 @@
       "large": "/interstellar/scene.jpg"
     }
   },
-    "i7": {
+    "seven": {
     "name": "The Martian",
     "rating": 9.1,
     "details": {
@@ -104,7 +104,7 @@
       "large": "/themartian/scene.png"
     }
   },
-    "8": {
+    "eight": {
     "name": "Guardians of the Galaxy",
     "rating": 9.3,
     "details": {
@@ -119,7 +119,7 @@
       "large": "/guardians/scene.jpeg"
     }
   },
-    "9": {
+    "nine": {
     "name": "How to Train Your Dragon",
     "rating": 8.9,
     "details": {
