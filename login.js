@@ -45,8 +45,18 @@ app.get('/',function(request, response){
   response.render('login',{title: 'Log in'});//this will open the login.pug
 });
 
+app.get('/main', function(request,response){
+   response.render('main_page',{username: "Welcome "}) 
+});
+
+app.get('/movie', function(request,response){
+   response.render('Movie',{username: "Welcome "}) 
+});
+app.get('/playing', function(request,response){
+   response.render('Now_playing',{username: "Welcome "}) 
+});
+
 app.post('/processLogin', function(request, response) {
-  console.log('form submitted: ' + request.body);
   var username = request.body.username;
   var password = request.body.password;
 

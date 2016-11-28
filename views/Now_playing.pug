@@ -1,19 +1,21 @@
 doctype html
 html
   head
-    // Make the title for the tab
     title The Average Movie Connoisseur
-    // Link the neccessary bootstrap and css files
-    link(rel='stylesheet', href='main.css')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     link(href='https://fonts.googleapis.com/css?family=Milonga', rel='stylesheet')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-  // The body of the site
+    script(type='text/javascript', src='https://code.jquery.com/jquery-3.0.0.min.js')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDHfbSrS_jgRWs_6vtwq_vm1rcZfmNpKEw')
+    link(type='text/css', rel='stylesheet', href='/playing.css')
+    script(type='text/javascript', src='/playing.js')
   body
-    // Make a standard navigation bar and place it so that the logo and Log-in icons would appear on top of this
-    nav.navbar.navbar-default(role='navigation', style='margin-top: 80px')
+    #header
+      img(src='movie-reel.png', alt='Logo')
+      img(src='title.png')
+    nav.navbar.navbar-default(role='navigation', style='margin-top: 0px')
       // Make the navbar header styled
       .navbar-header
         a.navbar-brand(method="get", href='/main') The Average Movie Connoisseur
@@ -21,7 +23,7 @@ html
       ul.nav.navbar-nav
         // Make an active header for the Course Outline for the header to be highlighted as opposed to the others
         li.active
-          a(href='#') Reviews
+          a(href='#columns') Reviews
         li
           a(href='#') Top Box Office
         li
@@ -47,27 +49,10 @@ html
             li.divider(role='separator')
             li
               a(href='#') The Average Movie Connoisseurs Awards
-    #header
-      img(src='movie-reel.png', alt='Logo')
-      img(src='title.png')
-      div
-        h2
-          // Make the Log In prompt button text, the css code will format it to become the button
-          strong
-            //b(href='login')=username
-            b=username
-            form(action="/logout", method="post")
-              //c(href='makeaccount') Make an Account
-              button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
-    // <h2>Real people, Real reviews</h2>
-    // Make a new section for the content and paragraphs of the program
-    section
-      // Make a container class to give the indented space from the left as instructed
-      .container
-        h2 Real people, Real reviews
-        h3
-          | The founders (Agilan, Alex, and Saif) were tired of the same old movie reviews and critiques that
-          | do not agree with the greater fanbase of the common moviegoer. Thus, The Average Movie Connoisseurs (TAMC) was
-          | founded on November 4, 2016
-        h3
-          | We exist to give accurate ratings and reviews based on what we, the average moviegoer likes
+    #form
+      | Postal Code:
+      input#city(type='text', name='city')
+      button#go Search
+    #map.col-sm-6 >
+    #weather.col-sm-4
+    #table.col-sm-10
