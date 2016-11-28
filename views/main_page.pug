@@ -1,0 +1,107 @@
+doctype html
+html
+  head
+    // Make the title for the tab
+    title The Average Movie Connoisseur
+    // Link the neccessary bootstrap and css files
+    link(rel='stylesheet', href='main.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Milonga', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  // The body of the site
+  body
+    // Make a standard navigation bar and place it so that the logo and Log-in icons would appear on top of this
+    nav.navbar.navbar-default(role='navigation', style='margin-top: 80px')
+      // Make the navbar header styled
+      .navbar-header
+        a.navbar-brand(href='#') The Average Movie Connoisseur
+      // Make the headers beside the brand
+      ul.nav.navbar-nav
+        // Make an active header for the Course Outline for the header to be highlighted as opposed to the others
+        li.active
+          a(href='#columns') Reviews
+        li
+          a(href='#') Top Box Office
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | A-Z Movie List
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='#') A-D
+            li.divider(role='separator')
+            li
+              a(href='#') E-H
+            li.divider(role='separator')
+            li
+              a(href='#') I-L
+            li.divider(role='separator')
+            li
+              a(href='#') M-P
+            li.divider(role='separator')
+            li
+              a(href='#') Q-T
+            li.divider(role='separator')
+            li
+              a(href='#') U-Z
+        li
+          a(href='#') Coming Soon
+        li.dropdown
+          // The caret is the triangle beside the word, "Now Playing"
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Now Playing
+            span.caret
+          ul.dropdown-menu(role='menu')
+            // Make the sub-headers through the dropdown menu
+            li
+              a(href='#') Reviews
+            // Make the dividers between each sub-header within the dropdown menu
+            li.divider(role='separator')
+            li
+              a(href='#') Overall Ratings
+            li.divider(role='separator')
+            li
+              a(href='#') Hype Radar
+        // Make the Community header and the dropdown menu for it
+        li.dropdown
+          // The caret is the triangle beside the word, "Community"
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Community
+            span.caret
+          ul.dropdown-menu(role='menu')
+            // Make the sub-headers through the dropdown menu
+            li
+              a(href='#') Message Board
+            // Make the dividers between each sub-header within the dropdown menu
+            li.divider(role='separator')
+            li
+              a(href='#') Chat
+            li.divider(role='separator')
+            li
+              a(href='#') The Average Movie Connoisseurs Awards
+    #header
+      img(src='movie-reel.png', alt='Logo')
+      img(src='title.png')
+      div
+        h2
+          // Make the Log In prompt button text, the css code will format it to become the button
+          strong
+            //b(href='login')=username
+            b=username
+            form(action="/logout", method="post")
+              //c(href='makeaccount') Make an Account
+              button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
+    // <h2>Real people, Real reviews</h2>
+    // Make a new section for the content and paragraphs of the program
+    section
+      // Make a container class to give the indented space from the left as instructed
+      .container
+        h2 Real people, Real reviews
+        h3
+          | The founders (Agilan, Alex, and Saif) were tired of the same old movie reviews and critiques that
+          | do not agree with the greater fanbase of the common moviegoer. Thus, The Average Movie Connoisseurs (TAMC) was
+          | founded on November 4, 2016
+        h3
+          | We exist to give accurate ratings and reviews based on what we, the average moviegoer likes
