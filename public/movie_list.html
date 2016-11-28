@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Average Movie Connoisseur</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHfbSrS_jgRWs_6vtwq_vm1rcZfmNpKEw"></script>
+        <link type="text/css" rel="stylesheet" href="playing.css" />
+        
+        <script type="text/javascript" src="movie_list.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <img src="movie-reel.png" alt="Logo" />
+            <img src = "title.png"/>
+        </div>
+        
+        <nav class="navbar navbar-default" role = "navigation" style = "margin-top: 0px">
+            <!--        Make the navbar header styled -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="main_page.html">The Average Movie Connoisseur</a>
+            </div>
+            <!--            Make the headers beside the brand-->
+            <ul class="nav navbar-nav">
+                <!--            Make an active header for the Course Outline for the header to be highlighted as opposed to the others-->
+                <li class="active"><a href="#columns">Reviews</a></li>
+				<li><a href="#">Top Box Office</a></li>
+                <li><a href="movie_list.html">Movies</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="playing.html">Now playing</a></li>
+<!--            Make the Community header and the dropdown menu for it-->
+                <li class = "dropdown">
+<!--                    The caret is the triangle beside the word, "Community"-->
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Community<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+<!--                        Make the sub-headers through the dropdown menu -->
+                        <li><a href="#">Message Board</a></li>
+<!--                        Make the dividers between each sub-header within the dropdown menu-->
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Chat</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">The Average Movie Connoisseurs Awards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="form">
+            Postal Code:
+            <input type="text" name="city" id="city"/>
+            <button id="go">Search</button>
+        </div>
+        
+        <div id="movies" class="col-sm-10">
+        
+        </div>
+    </body>
+</html>
