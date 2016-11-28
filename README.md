@@ -14,5 +14,5 @@ In the same directory as the package.json file, open a terminal and input "mongo
 
 In the same directory as the package.json file, open another terminal and input "nodejs login.js" into the command line.
 
-Then, open up an Internet browser and type "localhost:3000" into the URL and the login page will appear.
+Then, open up an Internet browser (Firefox is preferred) and type "localhost:3000" into the URL and the login page will appear.
 
