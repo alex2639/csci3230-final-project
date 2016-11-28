@@ -9,7 +9,7 @@ Agilan Ampigaipathar   100553054
 
 Md. Saif Niaz 100555440
 
-# Instructions of opening login page:
+# Instructions of opening login page (for Linux users):
 In the same directory as the package.json file, open a terminal and input "mongod" into the command line. This will set up the database.
 
 In the same directory as the package.json file, open another terminal and input "nodejs login.js" into the command line.
