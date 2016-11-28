@@ -18,9 +18,8 @@ app.set('port', process.env.PORT || 3000)
 // session (parses session IDs and loads data)
 app.use(session({
   genid: function(request) { return uuid.v4(); },
-  resave: false /* save only when changes */,
-  saveUninitialized: false /* save only when data */,
-  /*cookie: { secure: true; },*/
+  resave: false,
+  saveUninitialized: false,
   secret: 'apollo slackware propositional expectations'
 }));
 
@@ -46,14 +45,14 @@ app.get('/',function(request, response){
 });
 
 app.get('/main', function(request,response){
-   response.render('main_page',{username: "Welcome "}) 
+   response.render('main_page',{username: "Welcome "})
 });
 
 app.get('/movie', function(request,response){
-   response.render('Movie',{username: "Welcome "}) 
+   response.render('Movie',{username: "Welcome "})
 });
 app.get('/playing', function(request,response){
-   response.render('Now_playing',{username: "Welcome "}) 
+   response.render('Now_playing',{username: "Welcome "})
 });
 
 app.post('/processLogin', function(request, response) {
@@ -66,9 +65,6 @@ app.post('/processLogin', function(request, response) {
       request.session.username = username;
 
       // redirect to main page
-
-      //response.writeHead(301,{Location: 'main_page.html'});
-      //response.end();
 
       response.render('main_page',{username: "Welcome "+username});
 
@@ -114,8 +110,6 @@ app.post('/processRegistration', function(request, response) {
           request.session.username =username;
           request.session.save();
 
-          //response.writeHead(301,{Location: 'main_page.html'});
-          //response.end();
           response.render('main_page',{username: "Welcome "+username});
 
         }
