@@ -56,8 +56,11 @@ app.post('/processLogin', function(request, response) {
       request.session.username = username;
 
       // redirect to main page
-      response.writeHead(301,{Location: 'main_page.html'});
-      response.end();
+
+      //response.writeHead(301,{Location: 'main_page.html'});
+      //response.end();
+
+      response.render('main_page',{username: "Welcome "+username});
 
     }else{
       // show the login page again, with an error message
@@ -101,13 +104,20 @@ app.post('/processRegistration', function(request, response) {
           request.session.username =username;
           request.session.save();
 
-          response.writeHead(301,{Location: 'main_page.html'});
-          response.end();
+          //response.writeHead(301,{Location: 'main_page.html'});
+          //response.end();
+          response.render('main_page',{username: "Welcome "+username});
+
         }
       });
 
     }
   });
+});
+
+app.post('/logout',function(request,response){
+  request.session.username='';
+  response.render('login',{errorMessage: "You have successfully logged out."});
 });
 
 // setup the HTTP listener
