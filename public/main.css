@@ -27,7 +27,7 @@
 /*    background-color: #be1515;*/
 }
 
-/*Formatting the Log In button*/
+/*Formatting the welcome sign*/
 b {
     background-color: #000000;
     border-radius: 10px;
@@ -44,7 +44,7 @@ b {
     top: 5px;
 }
 
-/*Formatting the Make an Account button*/
+/*Formatting the Log out button*/
 #logoutbtn {
     background-color: #000000;
     border-radius: 10px;
