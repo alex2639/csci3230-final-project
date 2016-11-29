@@ -1,4 +1,4 @@
-html { 
+html {
     background-color: #fdf400
 }
 
@@ -14,10 +14,10 @@ body > header{
     float: left;
     top: 7px;
     position: absolute;
-}  
+}
 
 /*Formatting the Log Out button*/
-b { 
+#logoutbtn { 
     background-color: #000000;
     border-radius: 10px;
     color: white;
@@ -46,7 +46,7 @@ b {
     margin-bottom: 0px;
     color: #000000;
     padding: 10px;
-    
+
 }
 
 body > h2{
