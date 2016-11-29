@@ -18,3 +18,12 @@ In the same directory as the package.json file, open another terminal and input 
 
 Then, open up an Internet browser (Firefox is preferred) and type "localhost:3000" into the URL and the login page will appear.
 
+# Instructions of opening login page (for Windows users):
+Download the repository. Extract the zip to your desired folder.
+
+In the same directory as the package.json file, open the Command Prompt, enter C: to get to the C: directory then cd to \"Program Files"\MongoDB\Server\3.2\bin, and then input "mongod.exe --dpath" towards the path to where the package.json was saved/downloaded. This will set up the database.
+
+In the same directory as the package.json file, open another terminal and input "node login.js" into the command line.
+
+Then, open up an Internet browser (Firefox is preferred) and type "localhost:3000" into the URL and the login page will appear.
+
