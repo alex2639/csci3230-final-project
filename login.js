@@ -66,6 +66,11 @@ app.get('/featuredreviews', function(request,response){
   response.render('featuredreviews',{username: "Welcome "+name});
 });
 
+app.get('/messageboard', function(request,response){
+  var name=request.session.username;
+  response.render('messageboard',{username: "Welcome "+name});
+});
+
 app.post('/processLogin', function(request, response) {
   var username = request.body.username;
   var password = request.body.password;
