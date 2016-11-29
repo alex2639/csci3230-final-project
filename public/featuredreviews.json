@@ -1,0 +1,88 @@
+{
+"movie": [
+    {
+    "name": "Fight Club",
+    "rating": 9.3,
+    "production": "Fox 2000 Pictures",
+    "duration": 139,
+    "year": 1999,
+    "genre": ["Drama", "Thriller"], 
+    "review": "An excellent movie, with a shocking and memorable conclusion. Acting was excellent by Pitt and Norton as well as the entire cast. Look forward to getting mindblown"
+    },
+    {
+    "name": "Batman v Superman: Dawn of Justice",
+    "rating": 8.1,
+    "production": "Warner Bros.",
+    "duration": 151,
+    "year": 2016,
+    "genre": ["Action", "Adventure", "Comic Book"],
+    "review": "Spectacular action movie, excellent fight scenes, well casted. The ending was disappointing to say the least. The fights should have been longer. Good effort, but too much was attempted and pushed into one movie. The soundtrack was superb and fit very well regardless."
+    },
+    {
+    "name": "A Beautiful Mind",
+    "rating": 8.9,
+    "production": "Universal Pictures",
+    "duration": 135,
+    "year": 2001,
+    "genre": ["Biography", "Drama", "Thriller"],
+    "review": "A truly excellent movie, with an unbelievable shocking finish. The movie starts off a bit slow, but has intensive highs. Also, a greatly inspiring movie about the Nobel Prize winner, John Nash"
+    },
+    {
+    "name": "Captain America: The Winter Soldier",
+    "rating": 9.4,
+    "production": "Marvel Entertainment",
+    "duration": 136,
+    "year": 2014,
+    "genre": ["Action", "Adventure", "Comic Book"],
+    "review": "The soundtrack for this movie was absolutely amazing, the plot was spot on great. This is a movie that proves too many superheroes aren't needed it make an excellent movie. There were great humour moments, but the action and twists were a nice surprise, and really exceeded expectations"
+    },
+    {
+    "name": "The Tale of Despereaux",
+    "rating": 8.1,
+    "production": "Universal Pictures",
+    "duration": 93,
+    "year": 2008,
+    "genre": ["Animation", "Adventure", "Family"],
+    "review": "A great family movie, Despereaux was an fantastic and adorable protagonist. The movie was funny and just an overall fun movie with great graphics. The movie doesn't provide anything extraordinary but is a nice movie with great voice acting nonetheless."
+    },
+    {
+    "name": "Interstellar",
+    "rating": 9.8,
+    "production": "Paramount Pictures",
+    "duration": 169,
+    "year": 2014,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "review": "A complete masterpiece! Truly deserving of its rating. The movie's premise is thoughtprovoking and overall astonishing. The story, the details that connect, and the overall dark atmosphere with a hint of hope make it the masterpiece, and not to mention their spectacular soundtrack and perfect casting to compliment it."
+    },
+    {
+    "name": "The Martian",
+    "rating": 9.1,
+    "production": "Twentieth Century Fox Film Corporation",
+    "duration": 144,
+    "year": 2015,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "review": "A much more playful take on the idea of being stranded out in space. Movies don't always have to be dark to be good! Damon was excellent, funny, and a realistic character. There were intense moments as well, but the movie was fairly scientifically accurate and is just overall a great experience"
+    },
+    {
+    "name": "Guardians of the Galaxy",
+    "rating": 9.3,
+    "production": "Marvel Studios",
+    "duration": 121,
+    "year": 2014,
+    "genre": ["Adventure", "Action", "Sci-Fi"],
+    "review": "A truly amazing movie! It had action, comedy, unique music choices that were risky but paid off. The movie was excellent plot wise especially the team recruitment. The fights were great, with a sense of Marvel signature humour at its finest. Easily one of the best Marvel movies and summer movies to have come out at the time"
+    },
+    {
+    "name": "How to Train Your Dragon",
+    "rating": 8.9,
+    "production": "DreamWorks Animation",
+    "duration": 98,
+    "year": 2010,
+    "genre": ["Animation", "Adventure", "Family"],
+    "review": "An excellent family movie with great storyline, main character, unique variety of supporting characters, clever time frame,  astonishing sountrack, and fantastic animations make this movie one of the best animated movies out there"
+    }
+    ]
+}
+
+    
+    

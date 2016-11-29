@@ -1,0 +1,86 @@
+/*Background color theme */
+html { 
+    background-color: #fdf400
+}
+
+/*Have some opacity and format the pop up*/
+.messagepop {
+  background-color:#000000;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:relative;
+  text-align:left;
+  width: 800px;
+  height: 580px;
+  padding: 25px 25px 20px;
+  opacity: 0.90;
+  filter: alpha(opacity=90);  /*For IE8 and earlier*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+/*Add an opacity hover effect to the images within the container */
+.container > img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+  
+}
+
+.close { 
+    float: right;
+    font-size: 21px;
+    color: #fdf400;
+}
+
+h1 {
+  color: #000000;
+  font-size: 50px;
+  top: 40px;
+  position: relative;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+}
+
+#header > img {
+    width: 1100px;
+    height: 90px;
+    float: left;
+    top: 7px;
+    position: absolute;
+} 
+
+.container > img { 
+    height: 350px;
+    width: 250px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#show-data > img {
+  margin-left: auto;
+  margin-right: auto;
+  cursor:default;
+  margin-top: 25px;
+  position:relative;
+  border-bottom: 1px solid #EFEFEF;
+  display: block;
+}
+
+#show-data {
+    color: rgb(191, 134, 26);
+}
+
