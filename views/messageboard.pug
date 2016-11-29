@@ -17,7 +17,9 @@ html
     h2
       // Make the Log Out prompt button text, the css code will format it to become the button
       strong
-        b(method='post', href='/logout') Log Out
+        form(action="/logout", method="post")
+          //c(href='makeaccount') Make an Account
+          button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
     #comment1
       h5 10/21/2016 - Saif - Upcoming Movies
       p I'm so excited for Star Wars: Rogue 1!!!
@@ -34,7 +36,8 @@ html
         h5 10/30/2016 - Randy - Upcoming Movies
       p#demo
     #form
-      | Comment:
+      b=username
+      p Comment:
       br
       textarea#comment(name='comment4')
       button#btn(onclick='myFunction()') Enter
