@@ -1,5 +1,5 @@
 /*Background color theme */
-html { 
+html {
     background-color: #fdf400
 }
 
@@ -23,7 +23,7 @@ html {
 }
 
 /*Formatting the Log Out button*/
-b { 
+#logoutbtn {
     background-color: #000000;
     border-radius: 10px;
     color: white;
@@ -39,6 +39,23 @@ b {
     top: 5px;
 }
 
+c {
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    margin: none;
+    position: absolute;
+    right: 40px;
+    top: 45px;
+}
+
+
 /*Add an opacity hover effect to the images within the container */
 .container > img:hover {
     opacity: 0.5;
@@ -49,10 +66,10 @@ b {
   border-bottom: 1px solid #EFEFEF;
   margin: 8px 0;
   padding-bottom: 8px;
-  
+
 }
 
-.close { 
+.close {
     float: right;
     font-size: 21px;
     color: #fdf400;
@@ -74,9 +91,9 @@ h1 {
     float: left;
     top: 7px;
     position: absolute;
-} 
+}
 
-.container > img { 
+.container > img {
     height: 350px;
     width: 250px;
 }
@@ -100,4 +117,3 @@ h1 {
 #show-data {
     color: rgb(191, 134, 26);
 }
-
