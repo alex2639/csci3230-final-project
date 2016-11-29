@@ -6,10 +6,15 @@ html
     script(src='featuredreviews.js')
     title Featured Reviews
   body
+
+    h2
+      c=username
     h2
       // Make the Log Out prompt button text, the css code will format it to become the button
       strong
-        b(method='post', href='/logout') Log Out
+        form(action="/logout", method="post")
+          button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
+
     #header
       img(src='movie-reel.png', alt='Logo')
       img(src='title.png')
