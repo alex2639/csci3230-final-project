@@ -10,7 +10,7 @@ $(document).ready(function(){
         var cdate = new Date();
         var dtime = cdate.getFullYear()+"-"+ (cdate.getMonth()+1)+"-"+ cdate.getDate();
     
-        urlNP = "http://data.tmsapi.com/v1.1/movies/showings?startDate="+dtime+"&zip="+city+"&api_key=nyys6p8eqsd35q6kenkf9ary";
+        urlNP = "http://data.tmsapi.com/v1.1/movies/showings?startDate="+dtime+"&zip="+city+"&api_key=fzs587dc8mhq4u4xetqbxjr5";
         
         $.getJSON(urlNP, function(data){
             

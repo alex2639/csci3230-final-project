@@ -12,6 +12,33 @@ html
     link(type='text/css', rel='stylesheet', href='/playing.css')
     script(type='text/javascript', src='/movie_list.js')
   body
+    nav.navbar.navbar-default(role='navigation', style='margin-top: 80px')
+      // Make the navbar header styled
+      .navbar-header
+        a.navbar-brand(href='/main') The Average Movie Connoisseur
+      // Make the headers beside the brand
+      ul.nav.navbar-nav
+        // Make an active header for the header to be highlighted as opposed to the others
+        li.active
+          a(method="get", href='/featuredreviews') Featured Reviews
+        li
+          a(href='/playing') Now Playing
+        li
+          a(href='/movie') Movie List
+        // Make the Community header and the dropdown menu for it
+        li.dropdown
+          // The caret is the triangle beside the word, "Community"
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Community
+            span.caret
+          ul.dropdown-menu(role='menu')
+            // Make the sub-headers through the dropdown menu
+            li
+              a(href='/messageboard') Message Board
+            // Make the dividers between each sub-header within the dropdown menu
+            li.divider(role='separator')
+            li
+              a(href='/chat') Chat
     #header
       img(src='movie-reel.png', alt='Logo')
       img(src='title.png')
@@ -24,41 +51,6 @@ html
             form(action="/logout", method="post")
               //c(href='makeaccount') Make an Account
               button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
-              
-    nav.navbar.navbar-default(role='navigation', style='margin-top: 0px')
-      // Make the navbar header styled
-      .navbar-header
-        a.navbar-brand(method="get", href='/main') The Average Movie Connoisseur
-      // Make the headers beside the brand
-      ul.nav.navbar-nav
-        // Make an active header for the Course Outline for the header to be highlighted as opposed to the others
-        li.active
-          a(href='#columns') Reviews
-        li
-          a(href='#') Top Box Office
-        li
-          a(method="get", href='/movie') Movie List
-        li
-          a(href='#') Coming Soon
-        li
-          a(method="get", href='/playing') Now Playing
-        // Make the Community header and the dropdown menu for it
-        li.dropdown
-          // The caret is the triangle beside the word, "Community"
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | Community
-            span.caret
-          ul.dropdown-menu(role='menu')
-            // Make the sub-headers through the dropdown menu
-            li
-              a(href='#') Message Board
-            // Make the dividers between each sub-header within the dropdown menu
-            li.divider(role='separator')
-            li
-              a(href='#') Chat
-            li.divider(role='separator')
-            li
-              a(href='#') The Average Movie Connoisseurs Awards
     #form
       | Postal Code:
       input#city(type='text', name='city')

@@ -1,27 +1,73 @@
-html, #header, #body, #form, #movies{
+html, #header, #body, #form, #movies, #content{
     background: #f2c508;
 }
 
-#header{
-    width: 100%;
-    height: 100px;
-}
-
-#header>img{
-    width: 60%;
-    height: 90px;
-    margin-left: 22%;
+/*Formatting and positioning the logo*/
+#header img {
+    width: 1100px;
+    height: 75px;
+    float: left;
     top: 7px;
     position: absolute;
+}
+
+/*The formatting and positioning for the headers using the a tags*/
+#header a {
+	width: 100px;
+	padding: 0.5em 1em 0.5em 1em;
+	background: darkBlue;
+	border: 1px solid darkBlue;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*Formatting and positioning the dropdown menu*/
+.dropdown {
+    float: right;
+    position: inherit;
+    display: block;
+/*    background-color: #be1515;*/
+}
+
+/*Formatting the welcome sign*/
+b {
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    margin: none;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+}
+
+/*Formatting the Log out button*/
+#logoutbtn {
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    margin: none;
+    position: absolute;
+    right: 40px;
+    top: 50px;
 }
 
 #form{
     text-align: center;
     padding: 20px;   
-}
-
-nav{
-    
 }
 
 #map{
@@ -40,12 +86,10 @@ nav{
 }
 
 #table{
-    text-align: center;
     margin-left: 6%;
 }
 
 #table> table{
-    text-align: center;
     width: 90%;
     margin: 20px;
     background: #FFF59D;
@@ -70,4 +114,35 @@ nav{
     background: #FFF59D;
     border: 3px solid black;
     border-radius: 10px;
+}
+
+#content > h3{
+    text-align: center;
+    background: #f2c508;
+    margin: 0px;
+    padding: 20px;
+}
+
+#content > #messages {
+    height: 400px;
+    width: 50%;
+    margin-left: 25%;
+    border: 3px solid black;
+}
+
+#content > form {
+    margin-left: 30px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+#content > form >#chat {
+    height: 70px;
+    width: 30%;
+}
+
+
+a {
+    font-family: 'Milonga', cursive;
+
 }

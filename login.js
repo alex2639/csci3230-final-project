@@ -61,6 +61,11 @@ app.get('/playing', function(request,response){
   response.render('Now_playing',{username: "Welcome "+name});
 });
 
+app.get('/chat', function(request,response){
+  var name=request.session.username;
+  response.render('chat',{username: "Welcome "+name, Uname: name});
+});
+
 app.get('/featuredreviews', function(request,response){
   var name=request.session.username;
   response.render('featuredreviews',{username: "Welcome "+name});
@@ -97,7 +102,6 @@ app.post('/openRegister', function(request, response){
 
 
 app.post('/processRegistration', function(request, response) {
-  console.log('register form submitted: ' + request.body);
 
   var username = request.body.username;
   var firstname=request.body.firstName;
