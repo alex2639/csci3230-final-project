@@ -1,4 +1,6 @@
 doctype html
+// Agilan Ampigaipathar (100553054)
+// Start html code
 html
   head
     // Make the title for the tab
@@ -16,20 +18,30 @@ html
     nav.navbar.navbar-default(role='navigation', style='margin-top: 80px')
       // Make the navbar header styled
       .navbar-header
-        a.navbar-brand(method="get", href='/main') The Average Movie Connoisseur
+        a.navbar-brand(href='#') The Average Movie Connoisseur
       // Make the headers beside the brand
       ul.nav.navbar-nav
-        // Make an active header for the Course Outline for the header to be highlighted as opposed to the others
+        // Make an active header for the header to be highlighted as opposed to the others
         li.active
-          a(href='#') Reviews
+          a(href='featuredreviews.html') Featured Reviews
         li
           a(href='#') Top Box Office
         li
-          a(method="get", href='/movie') Movie List
-        li
           a(href='#') Coming Soon
-        li
-          a(method="get", href='/playing') Now Playing
+        li.dropdown
+          // The caret is the triangle beside the word, "Now Playing"
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Now Playing
+            span.caret
+          ul.dropdown-menu(role='menu')
+            // Make the sub-headers through the dropdown menu
+            li
+              a(href='#') Reviews
+            // Make the dividers between each sub-header within the dropdown menu
+            li.divider(role='separator')
+            | >
+            li
+              a(href='#') Hype Radar
         // Make the Community header and the dropdown menu for it
         li.dropdown
           // The caret is the triangle beside the word, "Community"
@@ -54,11 +66,8 @@ html
         h2
           // Make the Log In prompt button text, the css code will format it to become the button
           strong
-            //b(href='login')=username
-            b=username
-            form(action="/logout", method="post")
-              //c(href='makeaccount') Make an Account
-              button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
+            b(href='login') Log In
+            c(href='makeaccount') Make an Account
     // <h2>Real people, Real reviews</h2>
     // Make a new section for the content and paragraphs of the program
     section
