@@ -61,6 +61,11 @@ app.get('/playing', function(request,response){
   response.render('Now_playing',{username: "Welcome "+name});
 });
 
+app.get('/boxoffice', function(request,response){
+  var name=request.session.username;
+  response.render('boxoffice',{username: "Welcome "+name});
+});
+
 app.get('/chat', function(request,response){
   var name=request.session.username;
   response.render('chat',{username: "Welcome "+name, Uname: name});
