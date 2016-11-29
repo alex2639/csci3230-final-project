@@ -31,6 +31,7 @@ mongoose.connect('localhost:27017/');
 
 var Schema = mongoose.Schema;
 
+//user profile
 var userSchema = new Schema({
 	firstname: String,
 	lastname: String,
@@ -45,14 +46,19 @@ app.get('/',function(request, response){
 });
 
 app.get('/main', function(request,response){
-   response.render('main_page',{username: "Welcome "})
+  var name=request.session.username;
+
+   response.render('main_page',{username: "Welcome "+name});
 });
 
 app.get('/movie', function(request,response){
-   response.render('Movie',{username: "Welcome "})
+  var name=request.session.username;
+
+   response.render('Movie',{username: "Welcome "+name});
 });
 app.get('/playing', function(request,response){
-   response.render('Now_playing',{username: "Welcome "})
+  var name=request.session.username;
+  response.render('Now_playing',{username: "Welcome "+name});
 });
 
 app.post('/processLogin', function(request, response) {
@@ -65,7 +71,6 @@ app.post('/processLogin', function(request, response) {
       request.session.username = username;
 
       // redirect to main page
-
       response.render('main_page',{username: "Welcome "+username});
 
     }else{
