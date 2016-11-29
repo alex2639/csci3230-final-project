@@ -1,23 +1,52 @@
 doctype html
 html
   head
-    script(src='http://code.jquery.com/jquery-1.7.1.min.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Milonga', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     link(rel='stylesheet', href='featuredreviews.css')
     script(src='featuredreviews.js')
     title Featured Reviews
   body
-
-    h2
-      c=username
-    h2
-      // Make the Log Out prompt button text, the css code will format it to become the button
-      strong
-        form(action="/logout", method="post")
-          button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
-
+    nav.navbar.navbar-default(role='navigation', style='margin-top: 80px')
+      // Make the navbar header styled
+      .navbar-header
+        a.navbar-brand(href='/main') The Average Movie Connoisseur
+      // Make the headers beside the brand
+      ul.nav.navbar-nav
+        // Make an active header for the header to be highlighted as opposed to the others
+        li.active
+          a(method="get", href='/featuredreviews') Featured Reviews
+        li
+          a(href='/playing') Now Playing
+        li
+          a(href='/movie') Movie List
+        // Make the Community header and the dropdown menu for it
+        li.dropdown
+          // The caret is the triangle beside the word, "Community"
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Community
+            span.caret
+          ul.dropdown-menu(role='menu')
+            // Make the sub-headers through the dropdown menu
+            li
+              a(href='/messageboard') Message Board
+            // Make the dividers between each sub-header within the dropdown menu
+            li.divider(role='separator')
+            li
+              a(href='/chat') Chat
     #header
       img(src='movie-reel.png', alt='Logo')
       img(src='title.png')
+      div
+        h2
+          // Make the Log In prompt button text, the css code will format it to become the button
+          strong
+            b=username
+            form(action="/logout", method="post")
+              button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
     h1 Featured Reviews
     #show-data.messagepop.pop
       a.close X

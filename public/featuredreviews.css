@@ -1,6 +1,68 @@
-/*Background color theme */
-html {
-    background-color: #fdf400
+#header img {
+    width: 1100px;
+    height: 75px;
+    float: left;
+    top: 7px;
+    position: absolute;
+}
+
+/*The formatting and positioning for the headers using the a tags*/
+#header a {
+	width: 100px;
+	padding: 0.5em 1em 0.5em 1em;
+	background: darkBlue;
+	border: 1px solid darkBlue;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*Formatting and positioning the dropdown menu*/
+.dropdown {
+    float: right;
+    position: inherit;
+    display: block;
+/*    background-color: #be1515;*/
+}
+
+/*Formatting the welcome sign*/
+b {
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    margin: none;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+}
+
+/*Formatting the Log out button*/
+#logoutbtn {
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    margin: none;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+/*Setting background color for site*/
+html, body {
+    background: #f2c508;
 }
 
 /*Have some opacity and format the pop up*/
@@ -21,40 +83,6 @@ html {
   margin-right: auto;
   margin-top: 25px;
 }
-
-/*Formatting the Log Out button*/
-#logoutbtn {
-    background-color: #000000;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    font-family: Helvetica, sans-serif;
-    margin: none;
-    position: absolute;
-    right: 40px;
-    top: 5px;
-}
-
-c {
-    background-color: #000000;
-    border-radius: 10px;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    font-family: Helvetica, sans-serif;
-    margin: none;
-    position: absolute;
-    right: 40px;
-    top: 45px;
-}
-
 
 /*Add an opacity hover effect to the images within the container */
 .container > img:hover {
@@ -85,14 +113,6 @@ h1 {
   text-align: center;
 }
 
-#header > img {
-    width: 1100px;
-    height: 90px;
-    float: left;
-    top: 7px;
-    position: absolute;
-}
-
 .container > img {
     height: 350px;
     width: 250px;
@@ -117,3 +137,9 @@ h1 {
 #show-data {
     color: rgb(191, 134, 26);
 }
+
+a {
+    font-family: 'Milonga', cursive;
+
+}
+
