@@ -34,7 +34,7 @@ button {
 }  
 
 /*Formatting the Log In button*/
-b { 
+#logoutbtn { 
     background-color: #000000;
     border-radius: 10px;
     color: white;
