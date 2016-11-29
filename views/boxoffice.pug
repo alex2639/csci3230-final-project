@@ -9,7 +9,9 @@ html
     h2
       // Make the Log In prompt button text, the css code will format it to become the button
       strong
-        b(href='') Log Out
+        form(action="/logout", method="post")
+          //c(href='makeaccount') Make an Account
+          button(type="submit", class="btn btn-primary" id="logoutbtn") Log out
     #header
       img(src='movie-reel.png', alt='Logo')
       img(src='title.png')
