@@ -73,7 +73,7 @@ app.get('/featuredreviews', function(request,response){
 
 app.get('/messageboard', function(request,response){
   var name=request.session.username;
-  response.render('messageboard',{username: "Welcome "+name});
+  response.render('messageboard',{username: name});
 });
 
 app.post('/processLogin', function(request, response) {
