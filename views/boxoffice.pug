@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Weekend Box Office
+    link(rel='stylesheet', href='boxoffice.css')
+    script(type='text/javascript', src='https://code.jquery.com/jquery-3.0.0.min.js')
+    script(type='text/javascript', src='boxoffice.js')
+  body
+    h2
+      // Make the Log In prompt button text, the css code will format it to become the button
+      strong
+        b(href='') Log Out
+    #header
+      img(src='movie-reel.png', alt='Logo')
+      img(src='title.png')
+      div
+        button#genTableButton Generate Table
+        #content.opened_page
